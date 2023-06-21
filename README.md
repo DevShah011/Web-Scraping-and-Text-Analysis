@@ -38,20 +38,20 @@ Fog Index = 0.4 * (Average Sentence Length + Percentage of Complex words)
 Average Number of Words Per Sentence
 Average Number of Words Per Sentence = the total number of words / the total number of sentences
 
-Complex Word Count
+Complex Word Count: 
 Complex words are words in the text that contain more than two syllables.
 
-Word Count
+Word Count: 
 We count the total cleaned words present in the text by 
 removing the stop words (using stopwords class of nltk package).
 removing any punctuations like ? ! , . from the word before counting.
 
-Syllable Count Per Word
+Syllable Count Per Word: 
 We count the number of Syllables in each word of the text by counting the vowels present in each word. We also handle some exceptions like words ending with "es","ed" by not counting them as a syllable.
 
-Personal Pronouns
+Personal Pronouns: 
 To calculate Personal Pronouns mentioned in the text, we use regex to find the counts of the words - “I,” “we,” “my,” “ours,” and “us”. Special care is taken so that the country name US is not included in the list.
 
-Average Word Length
+Average Word Length: 
 Average Word Length is calculated by the formula:
 Sum of the total number of characters in each word/Total number of words
